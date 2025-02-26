@@ -58,6 +58,7 @@ p {
     line-height: 1.5;
 }
 
+
 .columns {
     display: flex;
     justify-content: space-between;
@@ -65,8 +66,7 @@ p {
 }
 
 .column {
-    width: 30%;
-    padding: 12px;
+    width: 28%;
 }
 
 a {
@@ -74,7 +74,9 @@ a {
     font-weight: bold;
     text-decoration: underline;
 }
-
+#last {
+    width: 32%;
+}
 /* === RESPONSIVE CHO MOBILE === */
 @media (max-width: 768px) {
     .wrapper {
