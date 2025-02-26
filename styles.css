@@ -88,6 +88,7 @@ a {
     .d1 {
         height: 300px;
         background-size: contain; /* Đảm bảo ảnh nền không bị cắt */
+        border-radius: 10px;
     }
 
     .d2, .d3 {
@@ -97,6 +98,7 @@ a {
     .columns {
         flex-direction: column;
         align-items: center;
+        text-align: left;
     }
 
     .column {
