@@ -19,6 +19,7 @@ body {
     border-radius: 10px;
     background: white;
     padding: 20px;
+    transition: all 0.3s ease-in-out;
 }
 
 .d1 {
@@ -31,7 +32,6 @@ body {
     background-repeat: no-repeat;
     background-image: url('srcimg/bk.jpeg'); /* Cập nhật lại đường dẫn nếu cần */
 }
-
 
 .d2, .d3 {
     padding: 30px;
@@ -73,7 +73,47 @@ p {
 }
 
 a {
-    color: white; /* Màu trắng */
-    font-weight: bold; /* Chữ đậm */
-    text-decoration: underline; /* Gạch dưới */
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* === RESPONSIVE CHO MOBILE === */
+@media (max-width: 768px) {
+    .wrapper {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .d1 {
+        height: 300px;
+        background-size: contain; /* Đảm bảo ảnh nền không bị cắt */
+    }
+
+    .d2, .d3 {
+        padding: 20px;
+    }
+
+    .columns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    p {
+        font-size: 14px;
+    }
 }
